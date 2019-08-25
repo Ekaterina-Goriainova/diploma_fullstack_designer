@@ -59,7 +59,7 @@ h1, h2, h3, h4, span, button {
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.5;
+  opacity: 0.3;
   z-index: 2;
 }
 
@@ -128,12 +128,12 @@ h1, h2, h3, h4, span, button {
 
 .title {
   color: #ffffff;
-  white-space: nowrap;
   font-size: calc(31px + 7.76vw);
-  letter-spacing: 1vw;
+  letter-spacing: 0.5vw;
   text-shadow: 0 15px 10px rgba(0, 0, 0, 0.45);
-  display: block;
   text-align: center;
+  display: block;
+  margin-top: 3%;
 }
 
 .title:first-child {
@@ -141,6 +141,7 @@ h1, h2, h3, h4, span, button {
 }
 
 .title:last-child {
+  white-space: nowrap;
   font-size: calc(18px + 6.87vw);
 }
 
@@ -1089,6 +1090,10 @@ h4 {
     max-height: 30px;
   }
 
+  .title {
+    margin-top: 2%;
+  }
+
   .carousel {
     width: 28.28vw;
     max-width: 543px;
@@ -1308,10 +1313,9 @@ h4 {
 
   .title {
     font-size: 180px;
-    letter-spacing: 20px;
   }
 
-  .title:first-child {
+ .title:first-child {
     font-size: 110px;
   }
 
