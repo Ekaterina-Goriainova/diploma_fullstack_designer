@@ -1,0 +1,1448 @@
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/fonts/OpenSans-Bold.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-family: OpenSans-Regular, Arial, sans-serif;
+  text-decoration: none;
+  color: #000000;
+}
+
+li a:hover {
+  color: #ffffff;
+  fill: #ffffff;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+h1, h2, h3, h4, span, button {
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+
+.header {
+  background-color: #E85454;
+  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/background_640.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  padding-top: calc(123px - 4.17vw);
+  padding-bottom: calc(203px - 1vw);
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  background-color: #E85454;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(#E85454, transparent);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+.menu_mobile {
+  position: absolute;
+  z-index: 5;
+  width: 86vw;
+  top: 5vw;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu_list_mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.menu_burger, .tel {
+  width: 40px;
+  height: 40px;
+  margin-left: 0;
+}
+
+.tel {
+  padding-left: calc(86vw - 152px);
+  padding-right: 30px;
+}
+
+.mail {
+  width: 42px;
+  height: 42px;
+}
+
+.header_header {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: calc(88px + 6.875vw);
+  height: calc(63px + 4.95vw);
+  min-width: 110px;
+  min-height: 79px;
+  max-width: 220px;
+  max-height: 158px;
+}
+
+.title {
+  color: #ffffff;
+  white-space: nowrap;
+  font-size: calc(31px + 7.76vw);
+  letter-spacing: 1vw;
+  text-shadow: 0 15px 10px rgba(0, 0, 0, 0.45);
+  display: block;
+  text-align: center;
+}
+
+.title:first-child {
+  font-size: calc(21px + 4.64vw);
+}
+
+.title:last-child {
+  font-size: calc(18px + 6.87vw);
+}
+
+
+article, .form, .footer {
+  margin-top: calc(42px + 5.625vw);
+}
+
+article:first-child {
+  margin-top: calc(16px + 4.375vw);
+}
+
+h2 {
+  font-size: calc(22px + 2.5vw);
+  width: 90vw;
+  max-width: 1600px;
+  padding-bottom: calc(9px + 0.83vw);
+  border-bottom: 1px solid #000000;
+  margin: 0 auto calc(11px + 3.33vw) auto;
+}
+
+/* Слайдеры: события и новости */
+
+.carousel_group {
+  width: 90vw;
+  position: relative;
+  z-index: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.carousel {
+  display: inline-block;
+  font-size: 0;
+  width: 100%;
+  max-width: 514px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.carousel input {
+  display: none;
+}
+
+.carousel-list {
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  border: none;
+  position: relative;
+  z-index: 0;
+  transition: transform .3s;
+}
+
+.show_card {
+  white-space: normal;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+  left: 0;
+  top: 0;
+}
+
+.card {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  left: 0;
+  top: 0;
+}
+
+.show_card::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  background: linear-gradient(to top left, transparent 50%, #E85454 50%);
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  left: 0;
+  top: 0;
+}
+
+.title_group {
+  text-align: start;
+  font-size: calc(6px + 5.31vw);
+  position: absolute;
+  z-index: 3;
+  left: 7.78%;
+  top: 5.5%;
+  margin-top: 0;
+}
+
+.show_title {
+  color: #ffffff;
+  display: block;
+  margin-bottom: 5%;
+}
+
+.show_text {
+  font-size: 70%;
+  letter-spacing: normal;
+  text-transform: none;
+  display: block;
+}
+
+.show_text:last-child {
+  font-size: 60%;
+  margin-top: 5%;
+}
+
+article:nth-child(4) .show_title + .show_text {
+  text-transform: uppercase;
+}
+
+.radio_next, .radio_prev {
+	position: absolute;
+  z-index: 6;
+	cursor: pointer;
+	top: 55%;
+	width: 27px;
+  height: 50px;
+  fill: #ffffff;
+}
+
+.radio_next {
+  right: 7%;
+}
+
+.radio_prev {
+  left: 7%;
+}
+
+.next::before, .prev::before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  background-color: #ffffff;
+  opacity: 0.3;
+  width: 18vw;
+  max-width: 80px;
+  height: 50px;
+  right: 0;
+  top: 55%;
+  cursor: pointer;
+}
+
+.next::before {
+  right: 0;
+}
+
+.prev::before {
+  left: 0;
+}
+
+.carousel input:nth-child(1):checked ~ ul {
+    transform: translateX(0);
+}
+
+.carousel input:nth-child(2):checked ~ ul {
+    transform: translateX(-100%);
+}
+
+.carousel input:nth-child(3):checked ~ ul {
+    transform: translateX(-200%);
+}
+
+.carousel input:nth-child(4):checked ~ ul {
+    transform: translateX(-300%);
+}
+
+.carousel input:nth-child(1):checked ~ .arrow_next .next:nth-child(2), .arrow_next .next:nth-child(3) {
+    display: none;
+}
+
+.carousel input:nth-child(1):checked ~ .arrow_next .next:nth-child(1) {
+    display: block;
+}
+
+.carousel input:nth-child(2):checked ~ .arrow_next .next:nth-child(1), .arrow_next .next:nth-child(3) {
+    display: none;
+}
+
+.carousel input:nth-child(2):checked ~ .arrow_next .next:nth-child(2) {
+    display: block;
+}
+
+.carousel input:nth-child(3):checked ~ .arrow_next .next:nth-child(2), .arrow_next .next:nth-child(1) {
+    display: none;
+}
+
+.carousel input:nth-child(3):checked ~ .arrow_next .next:nth-child(3) {
+  display: block;
+}
+
+.carousel input:nth-child(4):checked ~ .arrow_next .next:nth-child(1), .arrow_next .next:nth-child(2), .arrow_next .next:nth-child(3) {
+    display: none;
+}
+
+.carousel input:nth-child(1):checked ~ .arrow_prev .prev:nth-child(1), .arrow_prev .prev:nth-child(2), .arrow_prev .prev:nth-child(3) {
+    display: none;
+}
+
+.carousel input:nth-child(2):checked ~ .arrow_prev .prev:nth-child(2), .arrow_prev .prev:nth-child(3) {
+    display: none;
+}
+
+.carousel input:nth-child(2):checked ~ .arrow_prev .prev:nth-child(1) {
+    display: block;
+}
+
+.carousel input:nth-child(3):checked ~ .arrow_prev .prev:nth-child(3), .arrow_prev .prev:nth-child(1) {
+    display: none;
+}
+
+.carousel input:nth-child(3):checked ~ .arrow_prev .prev:nth-child(2) {
+    display: block;
+}
+
+.carousel input:nth-child(4):checked ~ .arrow_prev .prev:nth-child(2), .arrow_prev .prev:nth-child(1) {
+    display: none;
+}
+
+.carousel input:nth-child(4):checked ~ .arrow_prev .prev:nth-child(3) {
+    display: block;
+}
+
+/* Территория */
+
+article:nth-child(2) {
+  position: relative;
+  z-index: 0;
+  margin-top: calc(132px + 5.625vw);
+}
+
+.title_map {
+  width: 90vw;
+  max-width: 1600px;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: calc(-72px - 5.625vw);
+}
+
+.title_map h2 {
+  margin-bottom: calc(3px + 0.625vw);
+}
+
+.choice {
+  font-size: calc(11px + 0.67vw);
+  font-family: OpenSans-Regular, Arial, sans-serif;
+}
+
+.map {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.number {
+  font-size: 0;
+  text-align: center;
+  line-height: 20px;
+  position: absolute;
+  z-index: 4;
+  background-color: #000000;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+}
+
+.number:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.number:nth-child(1) {
+  top: 85%;
+  left: 12%;
+  right: 83%;
+}
+
+.number:nth-child(2) {
+  top: 85%;
+  left: 34%;
+  right: 61%;
+}
+
+.number:nth-child(3) {
+  top: 85%;
+  left: 73%;
+  right: 22%;
+}
+
+.number:nth-child(4) {
+  top: 73%;
+  left: 17%;
+  right: 78%;
+}
+
+.number:nth-child(5) {
+  top: 79%;
+  left: 31%;
+  right: 64%;
+}
+
+.number:nth-child(6) {
+  top: 73%;
+  left: 37%;
+  right: 58%;
+}
+
+.number:nth-child(7) {
+  top: 76%;
+  left: 47%;
+  right: 48px;
+}
+
+.number:nth-child(8) {
+  top: 76%;
+  left: 70%;
+  right: 25%;
+}
+
+.number:nth-child(9) {
+  top: 64%;
+  left: 33%;
+  right: 62%;
+}
+
+.number:nth-child(10) {
+  top: 60%;
+  left: 29%;
+  right: 66%;
+}
+
+.number:nth-child(11) {
+  top: 67%;
+  left: 48%;
+  right: 47%;
+}
+
+.number:nth-child(12) {
+  top: 55%;
+  left: 56%;
+  right: 39%;
+}
+
+.number:nth-child(13) {
+  top: 59%;
+  left: 62%;
+  right: 33%;
+}
+
+.number:nth-child(14) {
+  top: 67%;
+  left: 70%;
+  right: 25%;
+}
+
+.number:nth-child(15) {
+  top: 59%;
+  left: 74%;
+  right: 21%;
+}
+
+.number:nth-child(16) {
+  top: 67%;
+  left: 80%;
+  right: 15%;
+}
+
+.number:nth-child(17) {
+  top: 75%;
+  left: 86%;
+  right: 9%;
+}
+
+.number:nth-child(18) {
+  top: 45%;
+  left: 43%;
+  right: 52%;
+}
+
+.number:nth-child(19) {
+  top: 40%;
+  left: 59%;
+  right: 36%;
+}
+
+.number:nth-child(20) {
+  top: 34%;
+  left: 85%;
+  right: 10%;
+}
+
+/* Подписка */
+
+.subscription {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  width: 100vw;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscription_title {
+  padding-bottom: 25px;
+  text-align: center;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.subscription_title h2 {
+  width: calc(231px + 17.87vw);
+  max-width: 574px;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: calc(3px + 0.625vw);
+}
+
+.subscription_text {
+  font-family: OpenSans-Regular, Arial, sans-serif;
+  font-size: calc(10px + 1.04vw);
+}
+
+.subscription_group {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(216px + 22.6vw);
+  max-width: 650px;
+  margin-left: 16px;
+  margin-right: 16px;
+  justify-content: space-between;
+}
+
+.field {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  height: calc(39px + 1.875vw);
+  max-height: 75px;
+  box-sizing: border-box;
+  padding: 0 0 0 calc(18px + 0.625vw);
+  font-size: calc(10px + 0.52vw);
+}
+
+.field:first-of-type {
+  width: calc(216px + 22.6vw);
+  max-width: 650px;
+  margin-bottom: calc(15px + 0.78vw);
+}
+
+.field:last-of-type {
+  width: calc(101px + 10.88vw);
+  max-width: 310px;
+}
+
+.field:focus {
+  outline: none;
+  border: 2px solid #E85454;
+  border-radius: 5px;
+}
+
+.button {
+  width: calc(101px + 10.88vw);
+  height: calc(39px + 1.875vw);
+  max-width: 310px;
+  max-height: 75px;
+  padding: 0;
+  margin: 0;
+  font-size: calc(11px + 0.78vw);
+  letter-spacing: 1px;
+  color: #ffffff;
+  border: 1px solid #E85454;
+  border-radius: 5px;
+  background-color: #E85454;
+  cursor: pointer;
+}
+
+.button:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.button:focus {
+  outline: none;
+}
+
+/* Резиденты */
+
+.residents_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 92.5vw;
+  max-width: 1628px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resident_link {
+  width: 50%;
+  max-width: 407px;
+}
+
+.residents_list .resident_link:nth-child(5n+1) {
+  width: 100%;
+  max-width: 814px;
+}
+
+.resident {
+  background-color: #5E5E5E;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: calc(92px + 14.95vw);
+  max-height: 379px;
+  margin-bottom: calc(4px + 1.25vw);
+  margin-left: calc(2px + 0.625vw);
+  margin-right: calc(2px + 0.625vw);
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.residents_list .resident_link:nth-child(1) .resident {
+  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/architecture_786.png);
+}
+
+.residents_list .resident_link:nth-child(2) .resident {
+  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/food_379.png);
+}
+
+.residents_list .resident_link:nth-child(3) .resident {
+  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/art_379.png);
+}
+
+.residents_list .resident_link:nth-child(4) .resident {
+  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/study_379.png);
+}
+
+.residents_list .resident_link:nth-child(5) .resident {
+  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/sport_379.png);
+}
+
+.residents_list .resident_link:nth-child(6) .resident {
+  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/store_786.png);
+}
+
+.resident_link .resident:hover::before {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.resident_link .resident:hover h3 {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.resident h3 {
+  color: #ffffff;
+  font-size: calc(12px + 1.72vw);
+  letter-spacing: 1px;
+  z-index: 3;
+}
+
+
+.footer {
+  background-color: #E85454;
+  padding-top: calc(23px + 2.19vw);
+  padding-bottom: calc(43px + 2.19vw);
+}
+
+.footer_footer {
+  width: 85vw;
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.footer_footer .logo {
+  padding: 0;
+  display: block;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer_menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.footer_list:nth-child(2) {
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.footer_item, h4 {
+  font-size: calc(12px + 0.31vw);
+  white-space: nowrap;
+}
+
+h4 {
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.footer_item {
+  margin-bottom: 30px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  width: 90vw;
+  max-width: 340px;
+  margin: 0 auto 0 auto;
+}
+
+.contact .tel {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contact:nth-child(1) {
+  width: 19px;
+  height: 36px;
+}
+
+.contact:nth-child(2) {
+  width: 45px;
+  height: 26px;
+}
+
+.contact:nth-child(3) {
+  width: 36px;
+  height: 36px;
+}
+
+
+@media (min-width: 481px) {
+  .number {
+    font-family: OpenSans-Bold, Arial, sans-serif;
+    font-size: calc(9px + 0.26vw);
+    text-align: center;
+    line-height: calc(17px + 0.57vw);
+    width: calc(31px + 0.99vw);
+    max-width: 50px;
+    height: calc(17px + 0.57vw);
+    max-height: 28px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .number:nth-child(1) {
+    top: calc(88% - 14px);
+    left: calc(19% - 25px);
+    right: calc(81% - 25px);
+  }
+
+  .number:nth-child(2) {
+    top: calc(88% - 14px);
+    left: calc(38% - 25px);
+    right: calc(62% - 25px);
+  }
+
+  .number:nth-child(3) {
+    top: calc(88% - 14px);
+    left: calc(71% - 25px);
+    right: calc(29% - 25px);
+  }
+
+  .number:nth-child(4) {
+    top: calc(76% - 14px);
+    left: calc(23% - 25px);
+    right: calc(77% - 25px);
+  }
+
+  .number:nth-child(5) {
+    top: calc(82% - 14px);
+    left: calc(35% - 25px);
+    right: calc(65% - 25px);
+  }
+
+  .number:nth-child(6) {
+    top: calc(76% - 14px);
+    left: calc(41% - 25px);
+    right: calc(59% - 25px);
+  }
+
+  .number:nth-child(7) {
+    top: calc(78% - 14px);
+    left: calc(49% - 25px);
+    right: calc(51% - 25px);
+  }
+
+  .number:nth-child(8) {
+    top: calc(78% - 14px);
+    left: calc(70% - 25px);
+    right: calc(30% - 25px);
+  }
+
+  .number:nth-child(9) {
+    top: calc(67% - 14px);
+    left: calc(37% - 25px);
+    right: calc(63% - 25px);
+  }
+
+  .number:nth-child(10) {
+    top: calc(62% - 14px);
+    left: calc(34% - 25px);
+    right: calc(66% - 25px);
+  }
+
+  .number:nth-child(11) {
+    top: calc(70% - 14px);
+    left: calc(50% - 25px);
+    right: calc(50% - 25px);
+  }
+
+  .number:nth-child(12) {
+    top: calc(58% - 14px);
+    left: calc(56% - 25px);
+    right: calc(44% - 25px);
+  }
+
+  .number:nth-child(13) {
+    top: calc(62% - 14px);
+    left: calc(62% - 25px);
+    right: calc(38% - 25px);
+  }
+
+  .number:nth-child(14) {
+    top: calc(70% - 14px);
+    left: calc(69% - 25px);
+    right: calc(31% - 25px);
+  }
+
+  .number:nth-child(15) {
+    top: calc(62% - 14px);
+    left: calc(72% - 25px);
+    right: calc(28% - 25px);
+  }
+
+  .number:nth-child(16) {
+    top: calc(70% - 14px);
+    left: calc(78% - 25px);
+    right: calc(22% - 25px);
+  }
+
+  .number:nth-child(17) {
+    top: calc(78% - 14px);
+    left: calc(83% - 25px);
+    right: calc(17% - 25px);
+  }
+
+  .number:nth-child(18) {
+    top: calc(47% - 14px);
+    left: calc(45% - 25px);
+    right: calc(55% - 25px);
+  }
+
+  .number:nth-child(19) {
+    top: calc(43% - 14px);
+    left: calc(59% - 25px);
+    right: calc(41% - 25px);
+  }
+
+  .number:nth-child(20) {
+    top: calc(37% - 14px);
+    left: calc(82% - 25px);
+    right: calc(18% - 25px);
+  }
+}
+
+@media (min-width: 641px) {
+  article:nth-child(2) {
+    margin-top: calc(42px + 5.625vw);
+  }
+
+  .title_map {
+    top: calc(16px + 4.375vw);
+  }
+
+  .choice {
+    font-family: OpenSans-Bold, Arial, sans-serif;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .header {
+    background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/background_1280.png);
+  }
+
+  .carousel {
+    width: 46.33vw;
+    padding-right: 43.68vw;
+  }
+
+  .show_card {
+    padding-right: 2.65vw;
+  }
+
+  .card {
+    width: 43.68vw;
+  }
+
+  .show_card::before {
+    width: 43.68vw;
+  }
+
+  .title_group {
+    font-size: 3.43vw;
+  }
+
+  article:nth-child(4) .title_group {
+    font-size: 3.86vw;
+  }
+
+  .radio_next {
+    right: 4%;
+  }
+
+  .radio_prev {
+    left: 4%;
+  }
+
+  .carousel input:nth-child(4):checked ~ ul {
+    transform: translateX(-200%);
+  }
+
+  .carousel input:nth-child(3):checked ~ .arrow_next .next:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .menu_desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 961px) {
+  .header {
+    background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/background_1920.png);
+    padding-top: 70px;
+  }
+
+  .menu_mobile {
+    display: none;
+  }
+
+  .menu_desktop {
+    position: absolute;
+    z-index: 6;
+    width: 83.3vw;
+    max-width: 1600px;
+    font-size: calc(8px + 0.52vw);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    top: calc(80px + 0.73vw);
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menu_top, .menu_bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu_list_top, .menu_list_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+
+  .menu_list_top {
+    padding: 0 0 calc(5px + 0.94vw) 0;
+  }
+
+  .menu_list_bottom {
+    width: 31.25vw;
+    max-width: 600px;
+    border-top: 1px solid #000000;
+    padding: calc(3px + 0.52vw) 0 0 0;
+  }
+
+  .tel_link {
+    margin-right: 4.69vw;
+  }
+
+  .mail_link {
+    margin-left: 4.69vw;
+    font-family: OpenSans-Bold, Arial, sans-serif;
+  }
+
+  .search {
+    width: calc(14px + 0.83vw);
+    height: calc(14px + 0.83vw);
+    max-width: 30px;
+    max-height: 30px;
+  }
+
+  .carousel {
+    width: 28.28vw;
+    max-width: 543px;
+    padding-right: 55.05vw;
+  }
+
+  .show_card {
+    width: 28.28vw;
+    max-width: 543px;
+    padding-right: 1.51vw;
+  }
+
+  .card {
+    width: 26.77vw;
+    max-width: 514px;
+  }
+
+  .show_card::before {
+    width: 26.77vw;
+    max-width: 514px;
+  }
+
+  .next::before, .prev::before {
+    width: 5.5vw;
+  }
+
+  .title_group {
+    font-size: 2.08vw;
+  }
+
+  article:nth-child(4) .title_group {
+    font-size: 2.34vw;
+  }
+
+  .radio_next {
+    right: 2%;
+  }
+
+  .radio_prev {
+    left: 2%;
+  }
+
+  .carousel input:nth-child(3):checked ~ ul {
+    transform: translateX(-100%);
+  }
+
+  .carousel input:nth-child(4):checked ~ ul {
+    transform: translateX(-100%);
+  }
+
+  .carousel input:nth-child(2):checked ~ .arrow_next .next:nth-child(2) {
+    display: none;
+  }
+
+  .show_card:hover::before {
+    content: "";
+    position: absolute;
+    background: #E85454;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+  }
+
+  .show_card:hover .title_group {
+    font-size: 2.6vw;
+    text-align: center;
+    left: 0;
+    right: 1.51vw;
+    top: 21%;
+  }
+
+  article:nth-child(4) .show_card:hover .title_group {
+    top: 28%;
+  }
+
+  .show_card:hover .show_text {
+    font-size: 60%;
+  }
+
+  .show_card:hover .show_text:last-child {
+    color: #ffffff;
+  }
+
+  .footer_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .footer_footer .logo {
+    width: 20%;
+    margin-bottom: 10px;
+  }
+
+  .footer_menu {
+    flex-wrap: nowrap;
+    width: 70%;
+    magrin-left: 10%
+  }
+
+  .footer_item {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .number:nth-child(1) {
+    left: calc(29% - 25px);
+    right: calc(71% - 25px);
+  }
+
+  .number:nth-child(2) {
+    left: calc(42% - 25px);
+    right: calc(58% - 25px);
+  }
+
+  .number:nth-child(3) {
+    left: calc(64% - 25px);
+    right: calc(36% - 25px);
+  }
+
+  .number:nth-child(4) {
+    left: calc(32% - 25px);
+    right: calc(68% - 25px);
+  }
+
+  .number:nth-child(5) {
+    left: calc(40% - 25px);
+    right: calc(60% - 25px);
+  }
+
+  .number:nth-child(6) {
+    left: calc(44% - 25px);
+    right: calc(56% - 25px);
+  }
+
+  .number:nth-child(7) {
+    left: calc(49% - 25px);
+    right: calc(51% - 25px);
+  }
+
+  .number:nth-child(8) {
+    left: calc(63% - 25px);
+    right: calc(37% - 25px);
+  }
+
+  .number:nth-child(9) {
+    left: calc(41% - 25px);
+    right: calc(59% - 25px);
+  }
+
+  .number:nth-child(10) {
+    left: calc(39% - 25px);
+    right: calc(61% - 25px);
+  }
+
+  .number:nth-child(11) {
+    left: calc(50% - 25px);
+    right: calc(50% - 25px);
+  }
+
+  .number:nth-child(12) {
+    left: calc(55% - 25px);
+    right: calc(45% - 25px);
+  }
+
+  .number:nth-child(13) {
+    left: calc(58% - 25px);
+    right: calc(42% - 25px);
+  }
+
+  .number:nth-child(14) {
+    left: calc(63% - 25px);
+    right: calc(37% - 25px);
+  }
+
+  .number:nth-child(15) {
+    left: calc(65% - 25px);
+    right: calc(35% - 25px);
+  }
+
+  .number:nth-child(16) {
+    left: calc(69% - 25px);
+    right: calc(31% - 25px);
+  }
+
+  .number:nth-child(17) {
+    left: calc(72% - 25px);
+    right: calc(28% - 25px);
+  }
+
+  .number:nth-child(18) {
+    left: calc(47% - 25px);
+    right: calc(53% - 25px);
+  }
+
+  .number:nth-child(19) {
+    left: calc(56% - 25px);
+    right: calc(44% - 25px);
+  }
+
+  .number:nth-child(20) {
+    left: calc(71% - 25px);
+    right: calc(29% - 25px);
+  }
+}
+
+@media (min-width: 1921px) {
+  .header {
+    background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/background_1920.png);
+    padding-bottom: 180px;
+  }
+
+  .title {
+    font-size: 180px;
+    letter-spacing: 20px;
+  }
+
+  .title:first-child {
+    font-size: 110px;
+  }
+
+  .title:last-child {
+    font-size: 150px;
+  }
+
+  .menu_desktop {
+    font-size: 18px;
+    top: 94px;
+  }
+
+  .menu_list_top {
+    padding: 0 0 23px 0;
+  }
+
+  .menu_list_bottom {
+    padding: 13px 0 0 0;
+  }
+
+  .tel_link {
+    margin-right: 90px;
+  }
+
+  .mail_link {
+    margin-left: 90px;
+  }
+
+  article, .form, .footer {
+    margin-top: 150px;
+  }
+
+  article:first-child {
+    margin-top: 100px;
+  }
+
+  h2 {
+    font-size: 70px;
+    width: 1600px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #000000;
+    margin: 0 auto 75px auto;
+  }
+
+  .carousel {
+    padding-right: 1057px;
+  }
+
+  .show_card {
+    padding-right: 29px;
+  }
+
+  .title_group {
+    font-size: 40px;
+  }
+
+  .show_card:hover .title_group {
+    font-size: 50px;
+    right: 29px;
+  }
+
+  .show_card:hover .show_text {
+    font-size: 30px;
+  }
+
+  article:nth-child(4) .title_group {
+    font-size: 45px;
+  }
+
+  article:nth-child(2) {
+    width: 1920px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title_map {
+    top: 100px;
+  }
+
+  .title_map h2 {
+    margin-bottom: 15px;
+  }
+
+  .choice {
+    font-size: 24px;
+  }
+
+  .number {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .subscription_title h2 {
+    margin-bottom: 15px;
+  }
+
+  .subscription_text {
+    font-size: 30px;
+  }
+
+  .field {
+    padding: 0 0 0 30px;
+    font-size: 20px;
+  }
+
+  .field:first-of-type {
+    margin-bottom: 30px;
+  }
+
+  .button {
+    font-size: 26px;
+  }
+
+  .resident {
+    margin-bottom: 28px;
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+
+  .resident h3 {
+    font-size: 45px;
+  }
+
+  .footer {
+    padding-top: 65px;
+    padding-bottom: 85px;
+  }
+
+  .footer_item, h4 {
+    font-size: 18px;
+  }
+}
