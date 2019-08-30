@@ -13,6 +13,7 @@
 }
 
 body {
+  min-width: 320px;
   margin: 0;
   padding: 0;
 }
@@ -42,7 +43,7 @@ h1, h2, h3, h4, span, .button {
 
 .header {
   background-color: #E85454;
-  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/background_640.png);
+  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/background_640.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -83,11 +84,13 @@ h1, h2, h3, h4, span, .button {
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu_list_mobile {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0;
   margin: 0;
@@ -99,14 +102,10 @@ h1, h2, h3, h4, span, .button {
   margin-left: 0;
 }
 
-.tel {
-  padding-left: calc(86vw - 152px);
-  padding-right: 30px;
-}
-
-.mail {
+.menu_list_mobile .mail {
   width: 42px;
   height: 42px;
+  margin-left: 30px;
 }
 
 .header_header {
@@ -698,27 +697,27 @@ h1, h2, h3, h4, span, .button {
 }
 
 .residents_list .resident_link:nth-child(1) .resident {
-  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/architecture_786.png);
+  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/architecture_786.jpg);
 }
 
 .residents_list .resident_link:nth-child(2) .resident {
-  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/food_379.png);
+  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/food_379.jpg);
 }
 
 .residents_list .resident_link:nth-child(3) .resident {
-  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/art_379.png);
+  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/art_379.jpg);
 }
 
 .residents_list .resident_link:nth-child(4) .resident {
-  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/study_379.png);
+  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/study_379.jpg);
 }
 
 .residents_list .resident_link:nth-child(5) .resident {
-  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/sport_379.png);
+  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/sport_379.jpg);
 }
 
 .residents_list .resident_link:nth-child(6) .resident {
-  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/store_786.png);
+  background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/store_786.jpg);
 }
 
 .resident_link .resident:hover::before {
@@ -1000,7 +999,7 @@ h1, h2, h3, h4, span, .button {
 
 @media (min-width: 641px) and (max-width: 960px) {
   .header {
-    background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/background_1280.png);
+    background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/background_1280.jpg);
   }
 
   .carousel {
@@ -1053,7 +1052,7 @@ h1, h2, h3, h4, span, .button {
 
 @media (min-width: 961px) {
   .header {
-    background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/background_1920.png);
+    background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/background_1920.jpg);
     padding-top: 70px;
   }
 
@@ -1082,7 +1081,11 @@ h1, h2, h3, h4, span, .button {
   }
 
   .menu_top {
-   padding-bottom: calc(5px + 0.94vw);
+    padding-bottom: calc(6px + 0.94vw);
+  }
+
+  .menu_bottom {
+    padding-top: calc(6px + 0.52vw);
   }
 
   .menu_list_top, .menu_list_bottom {
@@ -1099,8 +1102,17 @@ h1, h2, h3, h4, span, .button {
   .menu_list_bottom {
     width: 31.25vw;
     max-width: 600px;
+    padding: 0;
+  }
+
+  .menu_list_bottom::before {
+    content: "";
+    position: absolute;
+    width: 31.25vw;
+    max-width: 600px;
+    height: 0;
     border-top: 1px solid #000000;
-    padding: calc(3px + 0.52vw) 0 0 0;
+    top: 60%;
   }
 
   .menu_list_top:first-child .menu_list_item:first-child {
@@ -1242,7 +1254,7 @@ h1, h2, h3, h4, span, .button {
     margin-bottom: 0;
   }
 
-  h4 {
+  .footer_title {
     margin-bottom: 15px;
   }
 
@@ -1355,7 +1367,7 @@ h1, h2, h3, h4, span, .button {
 
 @media (min-width: 1921px) {
   .header {
-    background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/background_1920.png);
+    background-image: url(https://ekaterina-goriainova.github.io/diploma_fullstack_designer/img/background_1920.jpg);
     padding-bottom: 180px;
   }
 
