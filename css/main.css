@@ -570,7 +570,7 @@ h1, h2, h3, h4, span, .button {
   align-items: center;
   justify-content: center;
   width: 90vw;
-  max-width: 1310px;
+  max-width: 1274px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -578,8 +578,6 @@ h1, h2, h3, h4, span, .button {
 .subscription_title {
   margin-bottom: 25px;
   text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .subscription_title .second_title {
@@ -1234,6 +1232,11 @@ h1, h2, h3, h4, span, .button {
 
   .show_card:hover .show_text:last-child {
     color: #ffffff;
+  }
+
+  .form {
+    justify-content: space-between;
+    width: calc(418px + 44.58vw);
   }
 
   .footer_footer {
