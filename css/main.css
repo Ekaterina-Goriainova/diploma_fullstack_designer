@@ -642,6 +642,7 @@ h1, h2, h3, h4, span, .button {
   border-radius: 5px;
   background-color: #E85454;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .button:hover {
@@ -867,7 +868,7 @@ h1, h2, h3, h4, span, .button {
   }
 
   .choice {
-    font-family: OpenSans-Bold, Arial, sans-serif;
+    font-weight: bold;
   }
 
   .number:nth-child(1) {
@@ -1126,7 +1127,7 @@ h1, h2, h3, h4, span, .button {
   }
 
   .mail_link {
-    font-family: OpenSans-Bold, Arial, sans-serif;
+    font-weight: bold;
   }
 
   .search {
